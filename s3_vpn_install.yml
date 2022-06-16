@@ -1,0 +1,7 @@
+- name: Configure and install Minio and OpenVPN with admin panel 
+  hosts: all
+  become: true
+  gather_facts: True
+  roles:
+    - docker
+    - minio
